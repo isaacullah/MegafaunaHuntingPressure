@@ -1009,41 +1009,11 @@ num-foragers
 
 This is an agent-based simulation of human hunting of a sexually-dimorphic big-game species, based on the the classic "diet breadth model" of optimal foraging theory (see Foley 1985). You can simulate the impacts of hunter choice when encoutnering a bigger, but more dangerous male animal, versus a smaller but perhaps easier to kill female (perhaps with calf).
 
-## SIMULATION OPERATION
-
-SETUP: Initialize the number of foragers and total number of prey.  
-
-INIT-FORAGERS: One or more foragers (<init-foragers> selected by the user) are placed randomly and given 100 energy units (eu's) to start with. Each forager begins to move in random directions; each cell moved costs the forager 1 energy unit. 
-
-INIT-PREY: Prey (total determined by <init-prey>, selected by the user) are placed randomly and move randomly. Up to 4 distinct prey species can be defined. The user selects the relative density of the species, its food value (when consumed by a forager), and the costs to process the species before it can be eaten. Prey are ranked according to their net food value = gross food value - processing costs.
-
-MODEL-VERSION: Decide if you want grass to be grazed and regrown, or just to be a solid commodity.
-
-ANIMAL CHARACTERISTICS: Choose the handling time and energy payoff for males versus females. These will influence whether or not a herder will pursue a specific animal once encountered. You can also set the proportion of males versus females, the reproduction rate, and the animal's lifespan. 
-
-ENVIRONMENTAL CHARACTERISTICS: Set the rate of energy gain from food for the animals, as well as the movement costs for both foragers and animals. Set the time it takes for grass to regrow (in the grass version), and the starvation threshold for animals (if they do not get enough energy, they will die).
-
-FORAGING: When a forager encounters prey, she/he decides whether to take it or continue searching for prey. If she/he is not very hungry (energy >= 85), she/he will only take the 1st ranked prey; if she/he is hungrier (energy 70-85), she/he will take 1st or 2nd order prey; if she/he is even hungrier (energy 55-70, she/he will take prey ranked 1st through 3rd; if she/he is very hungry (energy < 55), she/he will take any prey. On taking any prey, the forager received the net food value. A patch turns red briefly to mark when a prey is taken.
-
-MODEL OUTPUT: Monitor the number of prey animals taken by foragers, the forager energy, the number of males and female animals, and the proportion of grazed to ungrazed grass.
-
-## HOW TO USE IT
-
-Set the options (see above). Press "setup". Then press "run".
-
-## THINGS TO TRY
-
-It's recommended to keep movement costs lower than energy gains, but experiment with the other sliders.The model is sensitive to the balance of foragers to animals, as well as the animal reproductive rate, but you can experiment with the handling costs and food value to see how forager strategies change. When do you get extinction of the prey animals and when does it stay sustainabile?
-
-## EXTENDING THE MODEL
-
-Other OFT models could be simulated in this way.
-
 ## CREDITS AND REFERENCES
 
-Isaac I. Ullah and Miriam Coleman, San Diego State University
+Isaac I. Ullah and Miriam Coleman, San Diego State University (2021)
 
-Based on the original Diet Breadth model by C. Michael Barton, Arizona State University 
+Some code reused from the "Diet Breadth" model by C. Michael Barton, Arizona State University 
 
 For an overview of OFT models, see Foley, R. (1985). Optimality theory in anthropology. Man, 20, 222-242.
 @#$#@#$#@
