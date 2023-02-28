@@ -2,6 +2,8 @@
 
 ## A model of human hunting pressure on a population of male and female animals in a possibly variable and dynamic environment. 
 
+[![DOI](https://zenodo.org/badge/384518376.svg)](https://zenodo.org/badge/latestdoi/384518376)
+
 The MHPM divides the prey species into male and female
 animals that are modeled independently to allow for sexual dimorphism
 and the possibility that hunters will prefer one over the other. Both
