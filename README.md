@@ -1,4 +1,4 @@
-# Megafaunal Hunting Pressure Model - V1.1
+# Megafauna Hunting Pressure Model - V1.1
 
 ## A model of human hunting pressure on a population of male and female animals in a possibly variable and dynamic environment. 
 
